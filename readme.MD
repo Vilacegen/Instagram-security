@@ -16,6 +16,12 @@ This project demonstrates how insecure HTTP traffic can expose sensitive user da
 - Ubuntu (for local testing)
 - Browser (Chrome/Firefox)
 
+![Login Page](screenshots/login-form.png)
+
+👨‍💻 Author
+Vilacegen
+Cybersecurity Student | Developer | Curious Human
+
 ## ⚙️ How to Run the Project
 
 ```bash
@@ -24,8 +30,6 @@ cd Instagram-security
 npm install
 node index.js
 
-![Login Page](screenshots/login-form.png)
 
-👨‍💻 Author
-Vilacegen
-Cybersecurity Student | Developer | Curious Human
+
+
